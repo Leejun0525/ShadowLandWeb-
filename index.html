@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>⚔️ ShadowLand</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- 游戏主区域 -->
+    <!-- ============================= -->
+
+    <div id="game">
+
+        <!-- ============================= -->
+        <!-- 顶部 HUD -->
+        <!-- ============================= -->
+
+        <div id="hud">
+
+            <div class="game-title">
+                ⚔️ ShadowLand
+            </div>
+
+            <div class="stat">
+                ❤️ HP:
+                <span id="hp">
+                    100 / 100
+                </span>
+            </div>
+
+            <div class="stat">
+                ⭐ EXP:
+                <span id="exp">
+                    0 / 100
+                </span>
+            </div>
+
+            <div class="stat">
+                💰 Gold:
+                <span id="gold">
+                    0
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- 游戏画面 -->
+        <!-- ============================= -->
+
+        <canvas id="gameCanvas"></canvas>
+
+
+        <!-- ============================= -->
+        <!-- 底部操作提示 -->
+        <!-- ============================= -->
+
+        <div id="message">
+
+            <span>
+                🎮 WASD / 方向键：移动
+            </span>
+
+            <span>
+                ⚔️ Space：攻击
+            </span>
+
+            <span>
+                🧪 Q：治疗
+            </span>
+
+            <span>
+                💨 E：冲刺
+            </span>
+
+            <span>
+                🔥 R：火球
+            </span>
+
+            <span>
+                ☄️ F：陨石
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- 游戏 JavaScript -->
+    <!-- ============================= -->
+
+    <!-- type="module" 很重要 -->
+    <script
+        type="module"
+        src="game.js"
+    ></script>
+
+</body>
+
+</html>
